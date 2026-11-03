@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0; 
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+
+main > article {
+    border: 1px solid red;
+    resize: both;
+    overflow: scroll ;
+}
+
+main > article {
+    display: grid;
+}
+
+h1 {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul > li{
+    border: 1px solid beige;
+    background-color: rgb(211, 211, 221);
+}
+
+.desc-pancake{
+    display: flex;
+    flex:wrap;
+    justify-content: center;
+}
+
+.desc-pancake > * {
+    flex: 1 1 120px;
+}
+
+sidebar-says {
+    display: grid;
+    grid-template-columns: minmax(20%, 200px) 80% ;
+    gap: 10px;
+}
+
+footer{
+    background-color: brown;
+}
+
+.pancake-stack {
+    display:grid;
+    grid-template-rows: auto 2fr auto;
+}
+
+.pancake-stack > section{
+    overflow: auto;
+}
